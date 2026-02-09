@@ -16,7 +16,29 @@ This project simulates real-world advertiser issue investigations similar to Goo
 
 ## Key Analyses
 - Spend anomaly detection
-- Funnel break identification
+- Funnel break identificationads-issue-investigation/
+│
+├── data/                        # Raw and processed CSV datasets
+│   ├── ad_groups.csv
+│   ├── campaigns.csv
+│   ├── config_changes.csv
+│   ├── conversions.csv
+│   └── daily_metrics.csv
+│
+├── generate_additional_data.py  # Script to generate or augment data
+│
+├── investigations/               # Documentation of investigations
+│   ├── issue_intake.md
+│   ├── rca_template.md
+│   └── resolved_cases.md
+│
+├── notebooks/                    # Analysis and experimentation notebooks/scripts
+│   └── exploratory_analysis.py
+│
+├── sql/                          # SQL scripts (currently empty folder)
+│
+└── README.md                     # Project overview
+
 - Before/after performance comparison
 - Root cause analysis tied to config changes
 
@@ -29,4 +51,6 @@ This project simulates real-world advertiser issue investigations similar to Goo
 ## Outcome
 Enabled structured, end-to-end issue ownership:
 intake → investigation → RCA → resolution → prevention
+
+
 
